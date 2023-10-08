@@ -13,7 +13,16 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.70);
-    
-
     text-align: center;
+}
+
+/* speaker overlay */
+.speakerOverlay{
+    background:  rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+.speakerOverlay:hover{
+    opacity: 1;
+    transition: all linear 0.3s;
+   
 }

@@ -3,9 +3,9 @@ import { PropTypes } from "prop-types";
 const HomeCard = ({services}) => {
     const {id,image,features,title,description,price} =  services;
   
-    for(const services of features){
-      console.log(services)
-    }
+    // for(const services of features){
+    //   console.log(services)
+    // }
     return (
        <div>
          <div className="card card-compact h-full  bg-base-100 shadow-xl">

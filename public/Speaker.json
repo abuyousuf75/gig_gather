@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "name": "Sajib",
+      "designation": "Web Devoloper",
+      "img": "https://i.ibb.co/NSCrs0V/2.jpg",
+      "platform": "Fiverr"
+    },
+    {
+      "id": 2,
+      "name": "Alice Smith",
+      "designation": "Graphic Designer",
+      "img": "https://i.ibb.co/12GQnB1/1.jpg",
+      "platform": "Upwork"
+    },
+    {
+      "id": 3,
+      "name": "Alayna",
+      "designation": "Marketing Manager",
+      "img": "https://i.ibb.co/q0WwLFW/3.jpg",
+      "platform": "Freelancer.com"
+    },
+    {
+      "id": 4,
+      "name": "Jack",
+      "designation": "Product Manager",
+      "img": "https://i.ibb.co/tp9Vb0S/4.jpg",
+      "platform": "Guru"
+    },
+    {
+      "id": 5,
+      "name": "Angalina",
+      "designation": "Data Analyst",
+      "img": "https://i.ibb.co/HP94zKw/5.jpg",
+      "platform": "Toptal"
+    },
+    {
+      "id": 6,
+      "name": "Sarah Lee",
+      "designation": "UX Designer",
+      "img": "https://i.ibb.co/QMSK5wy/6.jpg",
+      "platform": "PeoplePerHour"
+    },
+    {
+      "id": 7,
+      "name": "David Clark",
+      "designation": "Financial Analyst",
+      "img": "https://i.ibb.co/QmXB71t/7.jpg",
+      "platform": "99designs"
+    },
+    {
+      "id": 8,
+      "name": "Olivia Garcia",
+      "designation": "Content Writer",
+      "img": "https://i.ibb.co/D8k9dDm/8.jpg",
+      "platform": "FreelanceWriting.com"
+    }
+  ]
+  

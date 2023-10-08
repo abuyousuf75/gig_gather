@@ -2,8 +2,15 @@ import Banner from "../../components/Banner";
 import aboutImg from '../../assest/about.png'
 import Features from "../../components/Features";
 import EventSchedule from "../../components/EventSchedule";
+import { useContext } from "react";
+import { AuthContext } from "../../ContextApi/AuthProvider";
+import Spekaer from "../../components/Spekaer";
 
 const Home = () => {
+    // recive props 
+const {speakers} = useContext(AuthContext);
+
+
     return (
         <div>
            <Banner></Banner>
@@ -29,6 +36,17 @@ const Home = () => {
           <div className="container pt-10 pb-10">
             <EventSchedule></EventSchedule>
           </div>
+            {/* speakers */}
+            <div className=" pt-10 pb-4 bg-[#ededec]">
+                <div className="container">
+                <h2 className="text-5xl font-extrabold text-center text-[#301a52] mb-16"> Our Speakers</h2>
+                   <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
+                   {
+                        speakers.map(Aspeaker => <Spekaer key={Aspeaker.id} Aspeaker={Aspeaker}></Spekaer>)
+                    }
+                   </div>
+                </div>
+            </div>
         </div>
     );
 };
