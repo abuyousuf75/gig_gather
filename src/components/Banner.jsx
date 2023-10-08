@@ -7,9 +7,9 @@ const Banner = () => {
     
     return (
            <Carousel showThumbs={false} >
-            <div className="banner" style={{background: `url(${banner})`}}>
+            <div className="banner h-[450px] md:h-[80vh]" style={{background: `url(${banner})`}}>
            <div className="banner-overlay">
-              <div className='pt-28'>
+              <div className='pt-14 md:pt-28'>
               <p className='text-[#f5984c] text-xl font-semibold'>Find Your Next Gig Here</p>
                <div className="flex justify-center items-center ">
                <h2 className='md:text-4xl font-bold w-96 md:w-[700px] text-white mt-10'>Are you a freelancer? Want to build your community and also want to connect top rated freelancer over the world? </h2>

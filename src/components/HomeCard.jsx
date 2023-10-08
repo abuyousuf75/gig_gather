@@ -1,13 +1,19 @@
 import { PropTypes } from "prop-types";
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 const HomeCard = ({services}) => {
     const {id,image,features,title,description,price} =  services;
   
     // for(const services of features){
     //   console.log(services)
     // }
+    // for animaton aos
+    useEffect(()=>{
+      Aos.init()
+     },[])
     return (
-       <div>
+       <div data-aos="fade-up">
          <div className="card card-compact h-full  bg-base-100 shadow-xl">
         <figure><img  src={image} alt="course-img" /></figure>
         <div className="card-body text-[#473465]">

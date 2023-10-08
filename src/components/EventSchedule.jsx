@@ -1,11 +1,16 @@
+import { useEffect } from 'react';
 import spekaer1 from '../assest/Speaker/1.jpg'
 import spekaer2 from '../assest/Speaker/2.jpg'
 import spekaer3 from '../assest/Speaker/5.jpg'
 import spekaer4 from '../assest/Speaker/6.jpg'
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const EventSchedule = () => {
+  useEffect(()=>{
+    Aos.init()
+},[])
     return (
-        <div className="overflow-x-auto ">
+        <div data-aos="fade-up"  className="overflow-x-auto ">
         <table className="table">
           {/* head */}
           <thead className="bg-[#3d285c] text-xl text-white">

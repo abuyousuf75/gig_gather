@@ -1,13 +1,25 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-
+import { AuthContext } from "../ContextApi/AuthProvider";
+import deemyAvatar from '../assest/user.png';
 
 const Navbar = () => {
+  const {user,logOut} = useContext(AuthContext);
+
+  console.log(user)
    const navLinks = <>
         <NavLink className='font-semibold uppercase  ' to='/'> <li><a>Home</a></li></NavLink>
         <NavLink className='font-semibold uppercase' to='/about'> <li><a>About</a></li></NavLink>
         <NavLink className='font-semibold uppercase' to='/service'> <li><a>Services</a></li></NavLink>
-        
+        <NavLink className='font-semibold uppercase' to='/register'> <li><a>Register</a></li></NavLink>
    </>
+
+   //handelLogOut
+
+   const handelLogOut = () =>{
+        logOut();
+   }
+
     return (
        <section className="bg-[#fff] text-[#41405e]">
          <div className="navbar px-2 py-6 container">
@@ -29,18 +41,29 @@ const Navbar = () => {
         </div>
        {/* USER   */}   
        <div className="navbar-end ">
-       <Link to ='/login'> <button className="btn mr-28">Login</button></Link>
+       <div className=" mr-16 md:mr-20">
+       {
+          user ? <button onClick={handelLogOut} className="btn">LogOut</button> :  <Link to ='/login'> <button className="btn ">Login</button></Link>
+        }
+       </div>
             <div className=" dropdown dropdown-end ">
          
             <label  tabIndex={0} className="btn btn-ghost btn-circle avatar absolute right-0 -bottom-6">
         <div className="w-10 rounded-full">
-          <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+          {
+              user?  <img src={user.photoURL} alt="avatar" /> :
+              <img src={deemyAvatar} alt="avatar" />
+          }
         </div>
       </label>
-      <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+      <ul tabIndex={0} className="mt-3 z-[1] p-8 shadow menu menu-sm dropdown-content bg-base-100 rounded-box ">
+        {
+          user && <div>
+            <li className="text-[#e55189]">Email:{user.email}</li>
+            <li>Name: {user.displayName}</li>
+          </div>
+        }
         
-        <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
       </ul>
             </div>
         </div>
