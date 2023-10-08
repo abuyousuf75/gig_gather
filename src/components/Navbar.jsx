@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
              {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">EduMaka</a>
+          <Link to= '/'><a className="btn btn-ghost normal-case text-2xl font-extrabold ">GigGather</a></Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -29,11 +29,10 @@ const Navbar = () => {
         </div>
        {/* USER   */}   
        <div className="navbar-end ">
-            <div className=" dropdown dropdown-end justify-center items-center">
-          
-           <button className="btn mr-28">Login</button>
-          
-            <label  tabIndex={0} className="btn btn-ghost btn-circle avatar absolute right-0">
+       <Link to ='/login'> <button className="btn mr-28">Login</button></Link>
+            <div className=" dropdown dropdown-end ">
+         
+            <label  tabIndex={0} className="btn btn-ghost btn-circle avatar absolute right-0 -bottom-6">
         <div className="w-10 rounded-full">
           <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
         </div>

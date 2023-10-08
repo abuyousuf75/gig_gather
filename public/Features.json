@@ -1,0 +1,151 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/rw1FMTm/istockphoto-499517325-612x612.jpg",
+    "title": "Student Pass",
+    "description": "Ideal for students looking to attend the conference.",
+    "price": 50,
+    "features": [
+      "Access to all conference sessions",
+      "Student ID required",
+      "No access to VIP areas",
+      "Transportation not included",
+      "Buffet lunch not included",
+      "Hotel accommodations not included",
+      "Limited availability"
+    ],
+    "info": "With the Student Pass, you can access all conference sessions and learn from industry experts. It's a great opportunity to kickstart your career in freelancing."
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/5jzY26x/360-F-298357190-yj-GRac-L1-FZ75l6wy-RROr-Adq6q3r-MPCq-D.jpg",
+    "title": "Early Bird Pass",
+    "description": "Get early access and save on conference registration.",
+    "price": 199,
+    "features": [
+      "Access to all conference sessions",
+      "Early access to event materials",
+      "Networking opportunities",
+      "Transportation not included",
+      "Buffet lunch not included",
+      "Hotel accommodations not included",
+      "Limited availability"
+    ],
+    "info": "The Early Bird Pass allows you to access conference sessions before the general public and network with fellow freelancers. Start your freelancing journey on the right foot."
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/Vgx3sQW/360-F-175466970-a-RDd-Yku348o2yt-RIJge-Tuqychevh-Ue7u.jpg",
+    "title": "Standard Pass",
+    "description": "Standard pass with access to all conference sessions.",
+    "price": 299,
+    "features": [
+      "Access to all conference sessions",
+      "Networking opportunities",
+      "Access to event materials",
+      "No access to VIP areas",
+      "Transportation not included",
+      "Buffet lunch not included",
+      "Hotel accommodations not included"
+    ],
+    "info": "The Standard Pass provides comprehensive access to conference content, networking opportunities, and event materials. Enhance your freelancing skills and grow your network."
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/M7r1dtS/The-Top-Futurist-Speakers-to-Have-at-Your-Conference.jpg",
+    "title": "VIP Pass",
+    "description": "Experience the conference like a VIP.",
+    "price": 499,
+    "features": [
+      "Access to all conference sessions",
+      "VIP access to exclusive areas",
+      "Priority seating",
+      "Exclusive networking events",
+      "Transportation not included",
+      "Buffet lunch included",
+      "Hotel accommodations not included"
+    ],
+    "info": "With the VIP Pass, you'll enjoy a premium experience at the conference. Access exclusive areas, enjoy priority seating, and network with top freelancers and industry leaders."
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/y0Yq0B3/istockphoto-1358219358-612x612.jpg",
+    "title": "Group Pass (5+)",
+    "description": "Discounted rate for groups of 5 or more.",
+    "price": 249,
+    "features": [
+      "Access to all conference sessions",
+      "Group rate discount",
+      "Ideal for teams and organizations",
+      "Transportation not included",
+      "Buffet lunch included",
+      "Hotel accommodations not included"
+    ],
+    "info": "The Group Pass is perfect for teams and organizations. Get a discounted rate and empower your team with valuable freelancing insights and skills."
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/bHhJq5L/conference-speaker.jpg",
+    "title": "Single Day Pass",
+    "description": "Access to conference sessions for a single day.",
+    "price": 149,
+    "features": [
+      "Access to sessions on selected day",
+      "Networking opportunities",
+      "Limited availability",
+      "Transportation not included",
+      "Buffet lunch not included",
+      "Hotel accommodations not included"
+    ],
+    "info": "The Single Day Pass lets you experience the conference for a day. Attend the sessions of your choice and make meaningful connections in a short time."
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/bHhJq5L/conference-speaker.jpg",
+    "title": "Speaker Pass",
+    "description": "Exclusively for conference speakers.",
+    "price": 120,
+    "features": [
+      "Access to all conference sessions",
+      "Speaker privileges",
+      "VIP access",
+      "Transportation not included",
+      "Buffet lunch included",
+      "Hotel accommodations not included"
+    ],
+    "info": "The Speaker Pass is reserved for conference speakers. As a speaker, you'll have full access to conference sessions, special privileges, and VIP areas."
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/bLkj5v5/P1220073.jpg",
+    "title": "Exhibitor Pass",
+    "description": "For exhibitors showcasing at the conference.",
+    "price": 160,
+    "features": [
+      "Access to all conference sessions",
+      "Exhibitor booth space",
+      "Exposure to attendees",
+      "Transportation not included",
+      "Buffet lunch not included",
+      "Hotel accommodations not included"
+    ],
+    "info": "The Exhibitor Pass is designed for exhibitors showcasing their products or services at the conference. It includes access to sessions, exhibitor booth space, and exposure to conference attendees."
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/vcyHGxL/a-female-speaker-addressing-a-conference.jpg",
+    "title": "Senior Pass",
+    "description": "Discounted rate for seniors (age 60+).",
+    "price": 199,
+    "features": [
+      "Access to all conference sessions",
+      "Age 60 or older required",
+      "No access to VIP areas",
+      "Limited availability",
+      "Transportation not included",
+      "Buffet lunch not included",
+      "Hotel accommodations not included"
+    ],
+    "info": "The Senior Pass offers a discounted rate for attendees aged 60 or older. Join us and connect with fellow freelancers while enjoying valuable sessions tailored to your needs."
+  }
+]
