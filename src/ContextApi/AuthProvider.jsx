@@ -7,7 +7,9 @@ const AuthProvider = ({children}) => {
 const [featuredSession, setFeaturedSession] = useState([]);
 const [speakers, setSpeakers] = useState([]);
 const [user, setUser] = useState(null);
-const [lodding, setlodding] = useState(true)
+const [lodding, setlodding] = useState(true);
+
+
 
 // Sign up new users
 

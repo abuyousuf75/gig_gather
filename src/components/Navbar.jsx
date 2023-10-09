@@ -12,6 +12,12 @@ const Navbar = () => {
         <NavLink className='font-semibold uppercase' to='/about'> <li><a>About</a></li></NavLink>
         <NavLink className='font-semibold uppercase' to='/service'> <li><a>Services</a></li></NavLink>
         <NavLink className='font-semibold uppercase' to='/register'> <li><a>Register</a></li></NavLink>
+        {
+          user && <>
+             <NavLink className='font-semibold uppercase' to='/dashboard'> <li><a>Dashboard</a></li></NavLink>
+             <NavLink className='font-semibold uppercase' to='/orderHistory'> <li><a> Cart</a></li></NavLink>
+          </>
+        }
    </>
 
    //handelLogOut

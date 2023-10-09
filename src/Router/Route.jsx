@@ -8,6 +8,8 @@ import Register from "../Pages/RegisterPage/Register";
 import Error from "../Pages/ErrorPages/Error";
 import Details from "../Pages/Details";
 import PriveteRout from "./PriveteRout";
+import Dashboard from "../Pages/PrivetePages/Dashboard";
+import OrderHistory from "../Pages/PrivetePages/OrderHistory";
 
 const router = createBrowserRouter([
     {
@@ -39,6 +41,15 @@ const router = createBrowserRouter([
          {
            path: "/register",
            element:<Register></Register>
+         },
+         
+         {
+           path: "/dashboard",
+           element:<Dashboard></Dashboard>
+         },
+         {
+           path: "/orderHistory",
+           element:<OrderHistory></OrderHistory>
          },
          
          

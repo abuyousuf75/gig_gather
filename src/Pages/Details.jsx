@@ -1,6 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { AuthContext } from "../ContextApi/AuthProvider";
+import toast from "react-hot-toast";
+
 
 
 const Details = () => {
@@ -12,7 +14,10 @@ const Details = () => {
     // const [list, setList] = useState('')
     const {image,info,title,description,price} = sortData;
 
-     
+    const hadelBuyNow = () =>{
+        toast.success('Successfully purcesed!')
+    }
+      
     // sort by id
 
     useEffect(()=>{
@@ -38,7 +43,8 @@ const Details = () => {
                       <li key={index} className="font-bold mb-1">{list}</li>
                          ))}
                        </ul>
-                        <button className="py-3 px-8 mt-4 mb-2 bg-[#e55189] text-white">Buy Now</button>
+                        <button onClick={hadelBuyNow} className="py-3 px-8 mt-4 mb-2 bg-[#e55189] text-white">Buy Now</button>
+                           
                        </div>
                     </div>
     
