@@ -4,12 +4,11 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 const HomeCard = ({services}) => {
-    const {id,image,features,title,description,price} =  services;
+    const {id,image,title,description,price} =  services;
   
-    // for(const services of features){
-    //   console.log(services)
-    // }
+   
     // for animaton aos
+
     useEffect(()=>{
       Aos.init()
      },[])
@@ -36,6 +35,9 @@ const HomeCard = ({services}) => {
     );
 };
 
+HomeCard.propTypes = {
+   services:PropTypes.obj,
+}
 
 
 

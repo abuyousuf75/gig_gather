@@ -18,7 +18,7 @@ const navigate = useNavigate()
     setUserError('');
     const userEmail = e.target.email.value;
     const userPassword = e.target.password.value;
-    console.log(userEmail,userPassword);
+    
     
     // user login info
     loginUser(userEmail,userPassword)

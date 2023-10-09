@@ -2,7 +2,7 @@
 
 const Service = () => {
     return (
-        <div>
+        <div className="container">
             <h2>Service</h2>
         </div>
     );

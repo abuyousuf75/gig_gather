@@ -6,11 +6,11 @@ import deemyAvatar from '../assest/user.png';
 const Navbar = () => {
   const {user,logOut} = useContext(AuthContext);
 
-  console.log(user)
+ 
    const navLinks = <>
         <NavLink className='font-semibold uppercase  ' to='/'> <li><a>Home</a></li></NavLink>
         <NavLink className='font-semibold uppercase' to='/about'> <li><a>About</a></li></NavLink>
-        <NavLink className='font-semibold uppercase' to='/service'> <li><a>Services</a></li></NavLink>
+        {/* <NavLink className='font-semibold uppercase' to='/service'> <li><a>Services</a></li></NavLink> */}
         <NavLink className='font-semibold uppercase' to='/register'> <li><a>Register</a></li></NavLink>
         {
           user && <>

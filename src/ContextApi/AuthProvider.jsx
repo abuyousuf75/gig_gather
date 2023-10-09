@@ -52,7 +52,6 @@ const loginUser = (email,password) =>{
 // on auth state change
     useEffect(()=>{
         const unSubscribe = onAuthStateChanged(auth,cUser =>{
-            console.log('obseeving user' , cUser)
             setUser(cUser);
             setlodding(false)
         });

@@ -1,6 +1,4 @@
-site live link : 
-
-website features : 
+site live link : https://gig-gather.web.app/
 
 ## overview: 
 this site was created by react js . We use tailwind css as farmework.
