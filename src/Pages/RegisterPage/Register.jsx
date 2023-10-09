@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import toast from "react-hot-toast";
 import { AuthContext } from "../../ContextApi/AuthProvider";
+import { Navigate } from "react-router-dom";
 
 
 const Register = () => {
@@ -16,6 +17,7 @@ const handelRegisterForm = (e) =>{
     const userEmail = e.target.email.value;
     const userPassword = e.target.password.value;
     console.log(userName,userEmail,userPassword);
+    
     //clear form
     setUserError('');
     setUserSucess('');
@@ -38,9 +40,12 @@ const handelRegisterForm = (e) =>{
 
    // crete user
    creteUser(userEmail,userPassword)
-   .then(res => {
-      console.log(res.user);
-      setUserSucess('User registered sucessfuly')
+   .then((sucess) => {
+    
+     if(sucess){
+      toast.success('User registered sucessfuly') && setUserSucess('Login Success')
+     }
+     
    })
    .catch(err => {
     setUserError(err.message);
@@ -82,6 +87,9 @@ const handelRegisterForm = (e) =>{
       }
       {
         userSucess && <p className="text-xl text-green-600">{userSucess}</p>
+      }
+      {
+        userSucess &&  <Navigate to="/login"  />
       }
   </form>
   

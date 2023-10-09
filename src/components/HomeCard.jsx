@@ -2,6 +2,7 @@ import { PropTypes } from "prop-types";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 const HomeCard = ({services}) => {
     const {id,image,features,title,description,price} =  services;
   
@@ -25,7 +26,9 @@ const HomeCard = ({services}) => {
           <h2 className="text-center text-xl">Price: {price} $</h2>
          
           </div>
-          <button className='text-white  mt-4 mb-4 hover:bg-[#ec83ab] bg-[#301a52] px-12 py-4'>Get Started</button>
+          <div className="w-full">
+          <Link to={`/details/${id}`}><button className='text-white w-full mt-4 mb-4 hover:bg-[#ec83ab] bg-[#301a52] px-12 py-4'>Details</button></Link>
+          </div>
         </div>
       </div>
       

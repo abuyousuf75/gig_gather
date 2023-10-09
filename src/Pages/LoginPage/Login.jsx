@@ -1,27 +1,31 @@
 
 import { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../ContextApi/AuthProvider';
 
 const Login = () => {
+  
 const {loginUser,googleLogin, githubLogin} = useContext(AuthContext);
-const [userError , setUserError] = useState('');
-const [userSucess, setUserSucess] = useState('');
 
+const [userError , setUserError] = useState('');
+const location = useLocation();
+const navigate = useNavigate()
 
   // handel Login user
   const handelLoginForm = (e) =>{
     e.preventDefault();
+    // clear form
+    setUserError('');
     const userEmail = e.target.email.value;
     const userPassword = e.target.password.value;
     console.log(userEmail,userPassword);
-    // clear form
-    setUserError('');
-    setUserSucess('');
+    
     // user login info
     loginUser(userEmail,userPassword)
     .then(() =>{
-      setUserSucess('User Login Sucessfuly')
+     
+      navigate(location.state ? location.state :'/')
+   
     })
     .catch(error =>{
 
@@ -29,17 +33,22 @@ const [userSucess, setUserSucess] = useState('');
     })
     
   }
+  
+
 // google 
   const handelGoogleLogin = () =>{
       googleLogin()
-      .then(result => {
-        console.log(result.user.email)
+      .then(() => {
+        navigate(location.state ? location.state :'/')
       })
   }
 
   // handelGithubLogin
   const handelGithubLogin = () =>{
-    githubLogin();
+    githubLogin()
+    .then(() => {
+      navigate(location.state ? location.state :'/')
+    })
 }
 
 
@@ -71,9 +80,7 @@ const [userSucess, setUserSucess] = useState('');
         {
           userError&& <p className='text-red-700 font-bold'>{userError}</p> 
         }
-        {
-           userSucess && <p className='text-green-700 font-bold'>{userSucess}</p>
-        }
+        
       </form>
       <div className="p-3 text-center mb-3">
       <h2>Dont’t Have An Account ? <Link to='/register'><span className="text-[#f8615d] ">Register</span></Link></h2>

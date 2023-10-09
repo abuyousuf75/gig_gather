@@ -7,16 +7,19 @@ const AuthProvider = ({children}) => {
 const [featuredSession, setFeaturedSession] = useState([]);
 const [speakers, setSpeakers] = useState([]);
 const [user, setUser] = useState(null);
+const [lodding, setlodding] = useState(true)
 
 // Sign up new users
 
 const creteUser = (email,password) =>{
+    setlodding(true);
   return   createUserWithEmailAndPassword(auth, email, password);
 }
 
 
 // Login existing user
 const loginUser = (email,password) =>{
+    setlodding(true);
     return signInWithEmailAndPassword(auth, email, password)
 }
    
@@ -24,18 +27,21 @@ const loginUser = (email,password) =>{
  const googleProvider = new GoogleAuthProvider();
 
  const googleLogin = () =>{
-        return signInWithPopup(auth,googleProvider);
+    setlodding(true);
+    return signInWithPopup(auth,googleProvider);
  }
 
  // github login 
  const githubProvider = new GithubAuthProvider();
 
  const githubLogin = () =>{
+    setlodding(true);
     return signInWithPopup(auth,githubProvider);
  }
 
  // logOut user
  const logOut = () =>{
+    setlodding(true);
     return signOut(auth);
  }
 
@@ -46,6 +52,7 @@ const loginUser = (email,password) =>{
         const unSubscribe = onAuthStateChanged(auth,cUser =>{
             console.log('obseeving user' , cUser)
             setUser(cUser);
+            setlodding(false)
         });
         return() => {
             unSubscribe();
@@ -67,7 +74,7 @@ const loginUser = (email,password) =>{
     },[])
 
     const authInfo = {
-        featuredSession,speakers,creteUser,user,loginUser,googleLogin,logOut, githubLogin 
+        featuredSession,speakers,creteUser,user,loginUser,googleLogin,logOut, githubLogin, lodding
     }
     return (
         <AuthContext.Provider value={authInfo} >

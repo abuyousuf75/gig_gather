@@ -3,6 +3,7 @@ import banner2 from '../assest/bg16.jpg'
 import '../components/Banner.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import { Link } from 'react-router-dom';
 const Banner = () => {
     
     return (
@@ -15,12 +16,13 @@ const Banner = () => {
                <h2 className='md:text-4xl font-bold w-96 md:w-[700px] text-white mt-10'>Are you a freelancer? Want to build your community and also want to connect top rated freelancer over the world? </h2>
                </div>
                <p className='text-[#e55189] mt-10 text-xl font-bold'>Friday, 1 December 2023, New York</p>
-               <button className='text-white mt-12 bg-[#e55189] px-12 py-4'>Resigter Now</button>
+               <Link to ='/register'><button className='text-white mt-12 bg-[#e55189] px-12 py-4'>Resigter Now</button></Link>
+               
               </div>
            </div>
            </div>
            {/* 2nd slider */}
-           <div className="banner" style={{background: `url(${banner2})`}}>
+           <div className="banner h-[450px] md:h-[80vh]" style={{background: `url(${banner2})`}}>
            <div className="banner-overlay">
               <div className='pt-28'>
               <p className='text-[#f5984c] text-xl font-semibold'>Skills, Events, Success</p>
